@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+
+table{
+    width: 100%;
+    height: 70vh;
+    background-color: #0b0030;
+    color: white;
+}
+
+td{
+    width: 25%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    background-color: #0b0020;
+}
+td:hover{
+    background-color: #000064;
+    cursor: pointer;
+
+
+}
+
+#resultArea{
+    height: 30vh;
+    background-color: #000029;
+    color: white;
+    font-size: 80px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#result{
+    background-color: #ca7900;
+}
+#result:hover{
+    background-color: #e98c00;
+}
+
+.specialSign{
+    background-color: #000085;
+}
