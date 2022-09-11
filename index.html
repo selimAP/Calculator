@@ -10,51 +10,54 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
 </head>
 <body>
-
-    <div id="resultArea">
-        
-    </div>
+    <div class="calculator">
+    <div id="resultArea"></div>
 
     <table>
         <tr>
             <td onclick="appendOperation(' ( ')" class="specialSign">(</td>
             <td onclick="appendOperation(' ) ')" class="specialSign">)</td>
             <td onclick="appendOperation(' π ')" class="specialSign">π</td>
-            <td onclick="deleteLast()" class="specialSign">DEL</td>
+            <td onclick="deleteLast()" class="DEL">DEL</td>
         </tr>
 
         <tr>
-            <td onclick="appendOperation(7)" >7</td>
-            <td onclick="appendOperation(8)" >8</td>
-            <td onclick="appendOperation(9)" >9</td>
+            <td onclick="appendOperation(7)" class="special" >7</td>
+            <td onclick="appendOperation(8)" class="special" >8</td>
+            <td onclick="appendOperation(9)" class="special" >9</td>
             <td onclick="appendOperation(' / ')" class="specialSign">/</td>
         </tr>
 
         <tr>
-            <td onclick="appendOperation(4)" >4</td>
-            <td onclick="appendOperation(5)" >5</td>
-            <td onclick="appendOperation(6)" >6</td>
+            <td onclick="appendOperation(4)" class="special" >4</td>
+            <td onclick="appendOperation(5)" class="special" >5</td>
+            <td onclick="appendOperation(6)" class="special" >6</td>
             <td onclick="appendOperation(' * ')" class="specialSign">x</td>
         </tr>
 
         <tr>
-            <td onclick="appendOperation(1)" >1</td>
-            <td onclick="appendOperation(2)" >2</td>
-            <td onclick="appendOperation(3)" >3</td>
+            <td onclick="appendOperation(1)" class="special" >1</td>
+            <td onclick="appendOperation(2)" class="special" >2</td>
+            <td onclick="appendOperation(3)" class="special" >3</td>
             <td onclick="appendOperation(' - ')"  class="specialSign">-</td>
         </tr>
 
         <tr>
-            <td onclick="appendOperation(0)" >0</td>
-            <td onclick="appendOperation('.')" >,</td>
+            <td onclick="appendOperation(0)" class="special" >0</td>
+            <td onclick="appendOperation('.')" class="special" >,</td>
             <td onclick="calculateResult()" id="result">=</td>
             <td onclick="appendOperation(' + ')"  class="specialSign">+</td>
         </tr>
     </table>
 
+</div>
     <script src="script.js">
 
     </script>

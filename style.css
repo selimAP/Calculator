@@ -1,25 +1,26 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 table{
     width: 100%;
     height: 70vh;
-    background-color: #0b0030;
-    color: white;
+    background-color: #414e42;
 }
 
 td{
+
     width: 25%;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
-    background-color: #0b0020;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
 }
 td:hover{
-    background-color: #000064;
+    background-color: #e2e2e2;
     cursor: pointer;
 
 
@@ -27,9 +28,9 @@ td:hover{
 
 #resultArea{
     height: 30vh;
-    background-color: #000029;
+    background-color: #6b7e6d;
     color: white;
-    font-size: 80px;
+    font-size: 120px;
     font-weight: 500;
     display: flex;
     justify-content: flex-end;
@@ -39,12 +40,30 @@ td:hover{
 }
 
 #result{
-    background-color: #ca7900;
+    background-color: #e98c00;
 }
 #result:hover{
-    background-color: #e98c00;
+    background-color: #ff9900;
 }
 
 .specialSign{
-    background-color: #000085;
+    background-color: #3f4853;
 }
+.specialSign:hover{
+    background: #47515e;
+}
+
+
+.DEL{
+    background-color: #dd1c1c;
+}
+.DEL:hover{
+    background-color: #ff2020;
+}
+
+.special{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+
