@@ -1,20 +1,19 @@
+let π = 3.14159265359; // pi definition
+
 function appendOperation(operation) {
-    document.getElementById('resultArea').innerHTML += operation;
+    document.getElementById('resultBox').innerHTML += operation;
 }
 
 function calculateResult(){
-    let container = document.getElementById('resultArea');
-    let result = eval(container.innerHTML);
+    let container = document.getElementById('resultBox');
+    let resultBox = eval(container.innerHTML);
 
-    container.innerHTML = result;
+    container.innerHTML = resultBox;
 }
 
 function deleteLast(){
-    let container = document.getElementById('resultArea');
+    let container = document.getElementById('resultBox');
 
-        container.innerHTML = container.innerHTML.slice(0, -500000);
-
-    
+    container.innerHTML = container.innerHTML.slice(0, 0);
 }
 
-var π = 3.14159265359; // pi definition
