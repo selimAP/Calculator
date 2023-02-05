@@ -1,13 +1,21 @@
 let π = 3.14159265359; // pi definition
 
+
 function appendOperation(operation) {
-    document.getElementById('resultBox').innerHTML += operation;
+  let container = document.getElementById('resultBox');
+  let previousOperation = container.innerHTML[container.innerHTML.length - 1];
+
+  if (previousOperation === operation && event.target.classList.contains("specialSign")) {
+    return;
+  }
+  
+  container.innerHTML += operation;
 }
 
 function calculateResult(){
     let container = document.getElementById('resultBox');
     let resultBox = eval(container.innerHTML);
-    container.innerHTML = resultBox;
+    container.innerHTML = resultBox
 }
 
 function deleteLast(){
@@ -17,30 +25,28 @@ function deleteLast(){
 }
 
 
-
-
 var div = document.getElementById("resultBox");
 var timerId;
 
 function checkLength() {
   var textLength = div.innerText.length;
 
-  if(textLength >= 16){
-    div.style.fontSize = "20px";
-  }
-  else if (textLength >= 12) {
+  if(textLength >= 18){
     div.style.fontSize = "30px";
   }
-  else if(textLength >= 11){
+  else if (textLength >= 18) {
+    div.style.fontSize = "35px";
+  }
+  else if(textLength >= 14){
     div.style.fontSize = "40px";
   }
-  else if(textLength >= 8){
+  else if(textLength >= 12){
     div.style.fontSize = "50px";
   }
-  else if (textLength >= 7) {
+  else if (textLength >= 10) {
     div.style.fontSize = "60px";
   }
-  else if(textLength >= 6){
+  else if(textLength >= 8){
     div.style.fontSize = "70px";
   } else {
     div.style.fontSize = "80px";
@@ -48,3 +54,4 @@ function checkLength() {
 }
 
 timerId = setInterval(checkLength, 1000);
+
