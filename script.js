@@ -62,12 +62,5 @@ function checkLength() {
   }
 }
 
-
-  document.getElementById("table").addEventListener("click", function(){
-    let audio = document.getElementById("myAudio");
-    audio.play();
-  });
-
-
 timerId = setInterval(checkLength, 1000);
 

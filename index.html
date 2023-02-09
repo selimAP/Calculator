@@ -19,7 +19,6 @@
             <div id="resultArea">
                 <div id="resultBox"></div>
             </div>
-
             <table id="table">
                 <tr>
                     <td onclick="appendOperation('(')" class="specialSign">(</td>
@@ -27,39 +26,31 @@
                     <td onclick="appendOperation('π')" class="specialSign">π</td>
                     <td onclick="deleteLast()" class="DEL">DEL</td>
                 </tr>
-        
                 <tr>
                     <td onclick="appendOperation(7)" class="special" >7</td>
                     <td onclick="appendOperation(8)" class="special" >8</td>
                     <td onclick="appendOperation(9)" class="special" >9</td>
                     <td onclick="appendOperation('/')" class="specialSign">/</td>
                 </tr>
-        
                 <tr>
                     <td onclick="appendOperation(4)" class="special" >4</td>
                     <td onclick="appendOperation(5)" class="special" >5</td>
                     <td onclick="appendOperation(6)" class="special" >6</td>
                     <td onclick="appendOperation('*')" class="specialSign">x</td>
                 </tr>
-        
                 <tr>
                     <td onclick="appendOperation(1)" class="special" >1</td>
                     <td onclick="appendOperation(2)" class="special" >2</td>
                     <td onclick="appendOperation(3)" class="special" >3</td>
                     <td onclick="appendOperation('-')"  class="specialSign">-</td>
                 </tr>
-        
                 <tr>
                     <td onclick="appendOperation(0)" class="special" >0</td>
                     <td onclick="appendOperation('.')" class="special" >,</td>
                     <td onclick="calculateResult()" id="result">=</td>
                     <td onclick="appendOperation('+')"  class="specialSign">+</td>
                 </tr>
-            </table>
-            <audio id="myAudio">
-                <source src="/sounds/click.wav" type="audio/mpeg">
-              </audio>
-        
+            </table>        
         </div>
     </div>
 
