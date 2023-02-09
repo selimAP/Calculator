@@ -8,15 +8,24 @@ function appendOperation(operation) {
   if (previousOperation === operation && event.target.classList.contains("specialSign")) {
     return;
   }
-  
+
   container.innerHTML += operation;
 }
 
 function calculateResult(){
-    let container = document.getElementById('resultBox');
-    let resultBox = eval(container.innerHTML);
-    container.innerHTML = resultBox
+  let container = document.getElementById('resultBox');
+  let expression = container.innerHTML;
+
+  if (expression === "") {
+    return;
+  }
+
+
+  let result = eval(expression);
+
+  container.innerHTML = result;
 }
+
 
 function deleteLast(){
     let container = document.getElementById('resultBox');
@@ -52,6 +61,13 @@ function checkLength() {
     div.style.fontSize = "80px";
   }
 }
+
+
+  document.getElementById("table").addEventListener("click", function(){
+    let audio = document.getElementById("myAudio");
+    audio.play();
+  });
+
 
 timerId = setInterval(checkLength, 1000);
 
